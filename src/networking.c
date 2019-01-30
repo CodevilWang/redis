@@ -2095,6 +2095,11 @@ void helloCommand(client *c) {
     addReplyLoadedModules(c);
 }
 
+/* HELLO <protocol-version> [AUTH <user> <password>] */
+void hiCommand(client *c) {
+    addReplyBulkCString(c,"hi from redis internal");
+}
+
 /* This callback is bound to POST and "Host:" command names. Those are not
  * really commands, but are used in security attacks in order to talk to
  * Redis instances via HTTP, with a technique called "cross protocol scripting"

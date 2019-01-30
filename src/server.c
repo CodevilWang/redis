@@ -327,7 +327,8 @@ struct redisCommand redisCommandTable[] = {
     {"host:",securityWarningCommand,-1,"lt",0,NULL,0,0,0,0,0,0},
     {"latency",latencyCommand,-2,"aslt",0,NULL,0,0,0,0,0,0},
     {"lolwut",lolwutCommand,-1,"r",0,NULL,0,0,0,0,0,0},
-    {"acl",aclCommand,-2,"ast",0,NULL,0,0,0,0,0,0}
+    {"acl",aclCommand,-2,"ast",0,NULL,0,0,0,0,0,0},
+    {"hi",hiCommand,0,"r",0,NULL,0,0,0,0,0,0}
 };
 
 /*============================ Utility functions ============================ */
